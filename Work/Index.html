@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ProofBase | Mint Your Skill Badge</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/ethers@5.7.2/dist/ethers.min.js"></script>
+</head>
+<body>
+  <nav>
+    <h1>🟣 ProofBase</h1>
+    <button id="connectWalletBtn">Connect Wallet</button>
+  </nav>
+
+  <main>
+    <section class="form-section">
+      <h2>Mint Your Skill Badge</h2>
+      <p id="walletStatus">Wallet not connected</p>
+
+      <div class="form-container">
+        <div id="mintSection">
+  <h3>Mint Your Skill Badge</h3>
+
+  <label for="skillName">Skill Name:</label><br>
+  <input type="text" id="skillName" placeholder="Enter skill name"><br><br>
+
+  <label for="description">Description:</label><br>
+  <input type="text" id="description" placeholder="Describe your skill"><br><br>
+
+  <label for="skillType">Skill Type:</label><br>
+  <input type="text" id="skillType" placeholder="E.g. Technical, Creative"><br><br>
+
+  <label for="nftImage">Upload Image:</label><br>
+  <input type="file" id="nftImage" accept="image/*"><br><br>
+
+  <button id="mintBtn" >Mint Skill Badge</button>
+</div>        
+  </div>
+  </section>
+  </main>
+
+  <footer>
+    <p>Powered by ProofBase • Web3 Skill Verification Platform</p>
+  </footer>
+
+  <script src="https://unpkg.com/ethers@5.7.2/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
